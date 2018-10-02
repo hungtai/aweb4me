@@ -36,30 +36,13 @@
 	<h1>Asycncronous JavaScript and XML</h1>
 	<div id="circle"></div>
 	<div class="square"></div>
-	<p>There is some text here</p>
+	<p id="pp">There is some text here</p>
 	<div id="mydiv"></div>
 	
 	<script>
-		$("#circle").click(function(){
-			$("p").html("square width:" + $(".square").css("width"));
-			
-		});
-		
-		$(".square").click(function(){
-			$("p").html("circle width:" + $("#circle").css("width"));
-			
-		});
-		
-		$("#mydiv").click(function(){
-			$(this).animate({
-			width:"300px",
-			height:"300px",
-			borderRadius:"150px",
-			marginTop:"80px",
-			marginLeft:"520px"
-			},5000);
-			
-		});
+		document.getElementById("circle").onclick=function(){
+			document.getElementById("pp).innerHTML="Change TEXT";
+		}
 	</script>
 </body>
 </html>
